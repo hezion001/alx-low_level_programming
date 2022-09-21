@@ -3,15 +3,19 @@
  * _strcat - concats src to dest
  * @dest: array to start with
  * @src: array to copy from
- * Return: dest
+ * Return: address of dest
  */
 char *_strcat(char *dest, char *src)
 {
-	char *dest_tmp = dest;
+	int i, j;
 
-	while (*dest)
-		++dest;
-	while ((*dest++ = *src++))
-		continue;
-	return (dest_tmp);
+	i = j = 0;
+	while (*(dest + i))
+		i++;
+	while ((*(dest + i) = *(src + j)))
+	{
+		i++;
+		j++;
+	}
+	return (dest);
 }
