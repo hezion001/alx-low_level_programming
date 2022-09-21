@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * print_buffer - prints a buffer in hex view
  * @b: buffer to print
