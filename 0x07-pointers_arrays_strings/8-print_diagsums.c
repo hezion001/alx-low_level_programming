@@ -5,11 +5,11 @@
  * @size: size of a
  * Return: void
  */
- void print_diagsums(int *a, int size)
- {
-	 int i = 0, x_sum = 0, y_sum = 0;
+void print_diagsums(int *a, int size)
+{
+	int i = 0, x_sum = 0, y_sum = 0;
 
-	 while (i < size)
-		 x_sum += a[size - i][size - i], y_sum += a[i][size - i];
-	 printf("%d, %d", x_sum, y_sum);
- }
+	while (i < size)
+		x_sum += a[size - i][size - i], y_sum += a[i][size - i];
+	printf("%d, %d", x_sum, y_sum);
+}
